@@ -1,0 +1,76 @@
+  <!doctype html>
+<html>
+<head>
+  <title>CSS 과제</title>
+  <meta charset="utf-7">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+    }
+    ol{
+      border-right:none;
+    }
+    h1 {
+            border-bottom:none;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h1>20219 정택준 위키</h1>
+  <div id="grid">
+    <ol>
+      <li>샌즈</li>
+      <li>마인크래프트</li>
+      <li>앞으로 이 웹의 운명?</li>
+      <li><a href="http://seilhs.icehs.kr/main.do""target="blank"title="세일고 가즈아">세일고 가는 곳</a></li>
+      <li><a href="https://www.notion.so/HTML-CSS-Javascript-f47f5399ee984bc28abb47507aa45a1c">수업 들으러 가는 곳</a></li>
+    </ol>
+    <div id="article">
+        <h2>1.샌즈는 무엇인가?</h2>
+        <p>
+          <img src="coding2.jpg" width=20%>
+      <p>샌즈란 무엇인가. 샌즈는 토비 폭스의 인디게임 언더테일에 등장하는 해골바가지이다. 그렇다면 샌즈는 왜 유명해진 것인가? 샌즈는 몰살루트로 돌입하면 보스전을 할 수 있게 되는데, 너무 강력하고 방대한 힘 앞에 무릎마저
+        꿇게 된다. 특히 가스트 블레스트는 엄.청.강.력.하.다. 심지어 독 데미지가 있어서 맞으면 맞을 수록 처량해지는 자신을 볼 수 있다.
+        </p>
+        <h2>2.마인크래프트는 뭐하는 게임인가?</h2>
+        <p>
+           <img src="coding.jpg" width=20%>
+           <p>마인크래프트는 인디게임으로 시작한 게임이다. 지금은 빌 게이츠에게 잡아먹혀서 인디게임 소리는 못 듣고 있지만 시작만큼은 인디였다. 샌드박스형 서바이벌 게임으로 엄청난 자유도 덕에 인기가 많은 게임이다.
+             다른 사람이 플레이하고 있을 때, 훈수는 두지 말자. 그것만큼 뭣같은 경우가 없는 게임이다. 샌드박스형 게임인 만큼 하고 싶은 거 왠만하면 다 할 수 있기에 개인 방송을 하는 사람들에게도 인기가 많다.
+<h2>3.이 웹은 앞으로 어떻게 운영되는가..</h2>
+<p>이 웹은 앞으로 위키 등의 정보를 전달하는 용도로 사용될 것입니다. 검색 같은 기능같은 것도 들어갈 수 있겠죠?
+      </div>
+  </div>
+  </body>
+  </html>
