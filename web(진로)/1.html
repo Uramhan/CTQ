@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<title>네이버 웹툰 추천</title>
+<meta charset="utf-7">
+<style>
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+  }
+  h1 {
+    font-size:45px;
+    text-align: left;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  h4{
+   border:1px solid black;
+   padding:30px;
+   margin:30px;
+   display:block;
+   width:250px;
+ }
+  h3{
+   border:1px solid black;
+   padding:50px;
+   margin:50px;
+   display:block;
+   width:550px;
+ }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1 {
+          border-bottom:none;
+  }
+}
+#first{
+color:green;
+}
+span{
+color:blue;
+}
+</style>
+</head>
+<body>
+<input type="button" value="hi" onclick="alert('hi')">
+<input type="text" onchange="alert('changed')" "bgcolor_yellow(this)">
+<input type="text" onkeydown="alert('key down!')">
+
+<h1>네이버 웹툰 추천</h1>
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value === 'night'){
+target.style.backgroundColor = 'black';
+target.style.color = 'white';
+this.value = 'day';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+  alist[i].style.color = 'powderblue';
+  i = i + 1;
+}
+} else {
+target.style.backgroundColor = 'white';
+target.style.color = 'black';
+this.value = 'night';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+  alist[i].style.color = 'blue';
+  i = i + 1;
+}
+}
+">
+<div id="grid">
+  <ol>
+    장르별
+    <li><a href="1.html">판타지</a></li>
+    <li><a href="2.html">액션</a></li>
+    <li><a href="3.html">스릴러</a></li>
+    <li><a href="4.html">로맨4</a></li>
+    <li><a href="5.html">넣기 애매한 자바 스크립트</a></li>
+  </ol>
+  <div id="article">
+      <h2><span id="first">판타지 장르 수작 웹툰</span></h2>
+      <p>
+        <img src="2.png" width=5%>
+    <p><span>마법 스크롤 상인 지오</span>는 일요일에 연재되는 웹툰입니다. 엄재경/호패 작가의 작품으로,
+      판타지라는 장르에 걸맞는 스토리와 신적인 존재가 등장함에도 파워 밸런스를 유지하는 등 스토리가 대단한 작품입니다.
+      그림도 연재 초기에 비해 점점 발달하여 지금은 연출이나 구도가 타 웹툰들보다도 좋은 묘사를 보여줍니다.
+      초반의 분위기만 잘 버티면 재밌게 볼 수 있습니다.
+<p>
+  <img src="9.png" width=5%>
+    <p><span>신 암행어사</span>는 완결된 웹툰으로, 본래 흑백만화로 연재되었던 작품입니다. 윤인완/양경일 작가의 작품으로,
+      우리 나라의 전래동화 및 구전된 이야기들이 각색되어 여러 이야기와 캐릭터로 등장합니다. 특히 양경일 작가의 그림이
+      예술입니다. 우리나라 이야기들을 담기 때문에 설마하니 외국 만화가 취향이라면 잘 안 맞을 수 있습니다.
+</div>
+</body>
+</html>
